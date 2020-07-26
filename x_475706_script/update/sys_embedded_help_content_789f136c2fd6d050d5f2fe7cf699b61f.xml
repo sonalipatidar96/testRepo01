@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <content/>
+        <last_sync/>
+        <modifier>normal</modifier>
+        <name>Earthquake Data Form - User</name>
+        <page>X_58872_earthquake_earthquake_data</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>false</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-26 09:10:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>789f136c2fd6d050d5f2fe7cf699b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Earthquake Data Form - User</sys_name>
+        <sys_package display_value="script" source="x_475706_script">e99883942f5e9050d5f2fe7cf699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="script">e99883942f5e9050d5f2fe7cf699b65d</sys_scope>
+        <sys_update_name>sys_embedded_help_content_789f136c2fd6d050d5f2fe7cf699b61f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-26 09:10:06</sys_updated_on>
+        <version>all</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=789f136c2fd6d050d5f2fe7cf699b61f"/>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_in_email_action">
+    <sysevent_in_email_action action="INSERT_OR_UPDATE">
+        <action>record_action</action>
+        <active>true</active>
+        <assignment_operator/>
+        <condition_script>email.subject.toLowerCase().indexOf('overdue needit task')&gt;=0</condition_script>
+        <description/>
+        <event_name>email.read</event_name>
+        <filter_condition/>
+        <from/>
+        <name>Update Needit Task on Reply</name>
+        <order>100</order>
+        <reply_email/>
+        <required_roles/>
+        <script><![CDATA[(function runAction(/*GlideRecord*/ current, /*GlideRecord*/ event, /*EmailWrapper*/ email, /*ScopedEmailLogger*/ logger, /*EmailClassifier*/ classifier) {
+var newInc =new GlideRecord('incident');
+	newInc.short_description ="fix incorrect birthday date";
+	newInc.description = email.body.comments;
+	newInc.insert();
+
+	current.work_notes = email.body_text;
+	current.update();
+
+})(current, event, email, logger, classifier);]]></script>
+        <stop_processing>true</stop_processing>
+        <sys_class_name>sysevent_in_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-07-26 08:00:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>087f07e02fd6d050d5f2fe7cf699b6c0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Update Needit Task on Reply</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="script" source="x_475706_script">e99883942f5e9050d5f2fe7cf699b65d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="script">e99883942f5e9050d5f2fe7cf699b65d</sys_scope>
+        <sys_update_name>sysevent_in_email_action_087f07e02fd6d050d5f2fe7cf699b6c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-07-26 08:18:20</sys_updated_on>
+        <table>x_475706_needit_occasions_staging</table>
+        <template/>
+        <type>reply</type>
+    </sysevent_in_email_action>
+</record_update>
